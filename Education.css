@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+nav a {
+  margin: 12px;
+  display: inline;
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  display: inline;
+  margin-right: 20%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #b74b4b;
+}
+
+nav {
+  margin: 20px;
+  font-size: 18.5px;
+  font-weight: 450;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size:large;
+}
+
+nav a:hover, nav a.education
+{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+
+
+
+
+.container1,
+.container2,
+.container3 
+{
+  display: inline-block;
+  background-color:  #000000;
+  color:  #ffffff;
+  width: 45vw;
+  height: 40vh;
+  margin: 20px;
+  padding: 20px;
+  font-style: normal;
+  border-radius: 50px;
+  margin-left: 100px;
+  margin-top: 50px;
+  border-color: white;
+  border-radius: 25px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+
+
+
+
+
+p {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.content {
+  font-size: small;
+  font-weight: 400;
+  color: white;
+}
+
+.degreeimage1 {
+  height: 40vh;
+}
+
+.degreeimage1 {
+  display: inline-block;
+  position: absolute;
+  width: 30vw;
+  height: 55vh;
+  margin: 20px;
+  margin-left: 100px;
+  margin-top: 12px;
+}
+
+.container2 {
+  padding: 35px;
+  margin-left: 700px;
+  padding: 20px;
+  width: 45vw;
+  height: 40vh;
+  position: relative;
+}
+
+
+
+.container1 .title1,
+.container2 .title2,
+.container3 .title3
+{
+  color: #b74b4b;
+}
+
+
+.schoolimage1,
+.schoolimage2 {
+  display: inline-block;
+  width: 30vw;
+  height: 50vh;
+  background-image: url(images/Learning.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 25px;
+}
+
+.schoolimage1 {
+  margin-left: 75px;
+  margin-top: -50px;
+  height: 70vh;
+}
+
+.schoolimage2 {
+  margin-top: 50px;
+  margin-left: 100px;
+  background-image: url(images/1school.png);
+}
+
+
+.thanks
+{
+  color: #b74b4b;
+  font-size: medium;
+  text-align: center;
+  padding: 5px;
+}

@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: black;
+  background-size: 50px;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  padding-top: 25px;
+}
+
+.logo {
+  font-size: 28px;
+  color: #b74b4b;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  margin-top: 0px;
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.aboutme {
+  color: #b74b4b;
+  border-bottom: 3px solid #b74b4b;
+}
+
+@media (max-width: 995px) {
+  nav {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 40%;
+    border-left: 3px solid #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem solid;
+    background-color: #161616;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+
+  nav.aboutme {
+    display: block;
+  }
+
+  nav a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  nav a:hover,
+  nav a.aboutme {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #b74b4b;
+  }
+}
+
+section {
+  display: inline-block;
+  min-height: 100vh;
+  padding: 5rem 9% 5rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background-color: black;
+  width: 60%;
+}
+
+.home-content {
+  display: inline-block;
+}
+
+.home .home-content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  display: inline-block;
+}
+
+span {
+  color: #b74b4b;
+}
+
+.home-content h3 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.home-img {
+  display: inline-block;
+  width: 600px;
+  height: 600px;
+  transform: translate(25, 50);
+  position: absolute;
+}
+
+.home-img img {
+  display: inline-block;
+  position: absolute;
+  margin-left: 500px;
+  top: -600px;
+  right: -800px;
+}
+
+.home-img img:hover {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 0.2rem solid #ffffff;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease;
+  color: #b74b4b;
+}
+
+.social-icons a:hover {
+  color: black;
+  transform: scale(1.3) translateY(-5px);
+  background-color: #ffffff;
+  box-shadow: 0 0 25px #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: black;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: #b74b4b;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  border: 2px solid #ffffff;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale3d(1.03);
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 0 0 25px #b74b4b;
+}
+
+.typing-text {
+  font-size: 34px;
+  font-weight: 20px;
+  min-width: 280px;
+}
+
+.skillbox {
+  border-radius: 0.5px;
+  border-width: 3px;
+  border-color: #ffffff;
+  border-style: solid;
+  border-radius: 40px;
+  display: inline-block;
+  position: relative;
+  height: 550px;
+  width: 1300px;
+  padding: 5px;
+  margin: 50px;
+  margin-left: 6.5%;
+}
+
+.skillsets h1,
+.skillsets p {
+  border-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 24px;
+  display: inline-block;
+  color: #b74b4b;
+  letter-spacing: 2px;
+  padding: 10px 30px;
+  font-weight: bolder;
+  font-size: x-large;
+  position: relative;
+  margin-left: 08%;
+  cursor: pointer;
+}
+
+.skillsets h1:hover {
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 0 0 25px #b74b4b;
+  transform: scale3d(1.03);
+}
+
+.skillsets p {
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.skillsets p:hover
+{
+  background-color: #b74b4b;
+  color: #161616;
+}
+
+.technicalskill1, .technicalskill2, .technicalskill3 
+{
+  height: 270px;
+  width: auto;
+  border-width: 0.1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 15px;
+  display: inline-block;
+  position: absolute;
+  padding: 20px;
+  margin: 32.2px;
+  margin-top: -5px;
+  margin-right: 80px;
+}
+
+.technicalskill1{
+  margin-left: 7%;
+}
+
+.technicalskill2{
+  margin-left: 35%;
+}
+
+.technicalskill3{
+  margin-left: 65%;
+}
+
+
+.technicalskill1:hover
+{
+  background-color: #b74b4b;
+  color: #161616;
+  cursor: pointer;
+}
+
+.technicalskill2:hover
+{
+  background-color: #b74b4b;
+  color: #161616;
+  cursor: pointer;
+}
+
+.technicalskill3:hover
+{
+  background-color: #b74b4b;
+  color: #161616;
+  cursor: pointer;
+}
+
+
+
+.technicalskill1 a, .technicalskill2 a, .technicalskill3 a
+{
+  font-style: oblique;
+  padding: 40px;
+  font-weight: 600;
+  font-weight: bold;
+  font-size: 12.5px;
+  letter-spacing: 1px;
+}
+
+.technicalskill1 h1, .technicalskill2 h1, .technicalskill3 h1
+{
+  font-weight:bold;
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+
+
+
+.endline
+{
+  position: relative;
+  margin-top: 23.5%;
+  text-align: center;
+  color: #b74b4b;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+
